@@ -1,0 +1,671 @@
+/*内容开始*/
+/*轮播开始*/
+.content .banner{
+    cursor: pointer;
+}
+.content .banner .left .control-left,.content .banner .right .control-right{
+    display: block;
+    width: 40px;
+    height: 91px;
+    background: url(../img/icons.png) -10px -2489px no-repeat;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    margin: -45px 0 0 0;
+}
+.content .banner .right .control-right{
+    background: url(../img/icons.png) -133px -2489px no-repeat;
+}
+@media (max-width: 1024px){
+    .content .banner .left .control-left,.content .banner .right .control-right{
+        width: 20px;
+        height: 45px;
+        background-size: 225px auto;
+        background-position: -5px -1244px;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        margin: -22px 0 0 0;
+    }
+    .content .banner .right .control-right{
+        background-position: -66px -1244px;
+    }
+}
+@media (max-width: 767px){
+    .content .banner .left .control-left,.content .banner .right .control-right{
+        width: 11px;
+        height: 25px;
+        background-size: 112px auto;
+        background-position: -2px -619px;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        margin: -12px 0 0 0;
+    }
+    .content .banner .right .control-right{
+        background-position: -33px -619px;
+    }
+}
+.content .banner .left .control-left:before,.content .banner .right .control-right:before{
+    display: none;
+}
+.banner .item img{
+    width: 100%;
+}
+/*轮播结束*/
+/*选择您的球队开始*/
+.select-your-team{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.selectteam-title{
+    width: 100%;
+    height: 20px;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+.selectteam-title p{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    background: none repeat scroll 0 0 #fff;
+    margin: 0;
+    padding: 0 16px;
+    position: relative;
+    font-weight: 500;
+}
+.selectteam-title span{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #a7a9ac;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.5px;
+}
+.all-team{
+    width: 93%;
+    height: auto;
+    padding-right: 7%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.all-team .eastern,.all-team .western{
+    width: 100%;
+    margin: 0 auto;
+}
+.all-team .eastern-out,.all-team .western-out{
+    width: 100%;
+    margin: 0 auto;
+
+}
+.all-team .eastern li,.all-team .western li{
+    float: left;
+    width: 6.25%;
+}
+.all-team .eastern li a,.all-team .western li a{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 15%;
+
+}
+.all-team .eastern li img,.all-team .western li img{
+    width: 100%;
+    height: auto;
+}
+.nba-logo{
+    width: 7%;
+    position: absolute;
+    top: -1%;
+    right: -2%;
+}
+.nba-logo img{
+    width: 73%;
+    height: auto;
+    z-index: 10;
+}
+.select-your-team .showin767{
+    width: 93%;
+    margin: 0 auto;
+    display: none;
+}
+.select-your-team .showin767 ul li{
+    width: 25%;
+    height: 30px;
+    padding-right: 10px;
+}
+.select-your-team .showin767 ul li a{
+    text-decoration: none;
+    background: #0a3665;
+    color: #fff;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+@media (max-width: 1024px) {
+    .all-team{
+        padding-right: 0;
+        width: 93%;
+    }
+    .nba-logo{
+        display: none;
+    }
+    .all-team .eastern-out,.all-team .western-out{
+        width: 50%;
+        float: left;
+    }
+    .eastern{
+        width: 100%;
+        float: left;
+        padding: 0 5%;
+        outline: 1px #e3e4e8 solid;
+    }
+    .western{
+        width: 100%;
+        float: right;
+        padding: 0 5%;
+
+    }
+    .all-team .western .area-title{
+        width: 100% ;
+        text-align: center;
+    }
+    .all-team .eastern .area-title{
+        width: 100% ;
+        text-align: center;
+    }
+    .all-team .western .area-title a,.all-team .eastern .area-title a{
+        margin: 0 auto;
+        padding: 0 0 6% 0;
+        display: inline-block;
+    }
+    .all-team .western .area-title a{
+        width: 24%;
+    }
+    .all-team .eastern .area-title a{
+        width: 24%;
+    }
+    .all-team .western .area-team,.all-team .eastern .area-team{
+        width: 33.33%;
+    }
+    .all-team .western .area-team a, .all-team .eastern .area-team a{
+        padding: 17%;
+    }
+}
+@media (max-width: 767px) {
+    .all-team{
+        border: 1px solid #e3e4e8;
+    }
+    .all-team .western,.all-team .eastern{
+        padding: 0;
+    }
+    .all-team .western .area-title a{
+        width: 40% ;
+    }
+    .all-team .eastern .area-title a{
+        width: 40%;
+    }
+
+    .all-team-p{
+        display: inline-block !important;
+        font-size: 18px;
+        color: #333333;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .all-team .western .area-team,.all-team .eastern .area-team{
+        display: none;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background-color: #eff1f6;
+    }
+    .all-team .western .area-team a,.all-team .eastern .area-team a{
+        padding: 10%;
+    }
+    .select-your-team .showin767{
+        display: block;
+    }
+}
+.bgceff{
+    background: #eff1f6;
+}
+/*选择您的球队结束*/
+/*球衣栅格系统开始*/
+.ball-shirt{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 0 5%;
+}
+.ball-shirt ul li{
+    margin-bottom: 2%;
+    text-align: center;
+}
+.ball-shirt ul li a{
+    margin: 0 auto;
+}
+.ball-shirt ul li a img{
+    width: 100%;
+    height: auto;
+}
+/*球衣栅格系统结束*/
+/*trademake开始*/
+ .trademark,.you-might-like{
+     width: 100%;
+     margin: 0 auto;
+     height: auto;
+     padding: 0 5%;
+     max-width: 1440px;
+
+ }
+ .trademark .trademake-ul-out{
+     margin: 0 30px;
+     text-align: center;
+ }
+ .trademark-ul{
+     width: 80%;
+     margin: 0 auto;
+     text-align: center;
+ }
+.trademark-ul li{
+    width: 12%;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+}
+.trademark-ul li a{
+    padding: 0 5%;
+    display: inline-block;
+}
+.trademark-ul li a img{
+    width: 100%;
+    height: auto;
+}
+/*trademake结束*/
+/*you-might-like开始*/
+.you-might-like{
+    width: 100%;
+    height: auto;
+}
+.you-might-like .you-might-like-out{
+    margin: 0 auto;
+    padding: 0 5%;
+    max-width: 1440px;
+}
+.you-might-like .section-title{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+.you-might-like .section-title:before {
+    background-color: #a7a9ac;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+.you-might-like .section-title h3{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    background: none repeat scroll 0 0 #fff;
+    zoom: 1;
+    position: relative;
+    margin: 0;
+    padding: 0 16px;
+    font-weight: 500;
+}
+.scroll-inner{
+    margin: 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-inner ul{
+    width: 600%;
+    position: relative;
+}
+.scroll-inner ul li{
+    display: inline-block;
+    width: 3.333%;
+    height: auto;
+    vertical-align: top;
+}
+.scroll-inner ul li a{
+    display: inline-block;
+    padding: 0 5%;
+}
+.scroll-inner ul li a img{
+    width: 100%;
+    height: auto;
+}
+.scroll-inner ul li h5{
+    font-size: 12px;
+    line-height: 14px;
+    padding: 14px 5% 0 5%;
+    margin: 0;
+    height: 28px;
+    overflow: hidden;
+}
+.scroll-inner ul li p{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 5% 0 5%;
+    color: #000;
+}
+.scroll-btn-prev,.scroll-btn-next{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 12;
+
+}
+.scroll-btn-prev{
+    left: 0%;
+}
+.scroll-btn-prev a{
+    display: inline-block;
+    width: 14px;
+    height: 32px;
+    background: url(../img/icons.png) -346px -87px no-repeat;
+    position: absolute;
+    left: -15%;
+    top: 50%;
+    margin: -16px 0 0 0;
+}
+.scroll-btn-next{
+    right: 0%;
+}
+.scroll-btn-next a{
+    display: inline-block;
+    width: 14px;
+    height: 32px;
+    background: url(../img/icons.png) -390px -87px no-repeat;
+    position: absolute;
+    right: -25%;
+    top: 50%;
+    margin: -16px 0 0 0;
+}
+
+/*you-might-like结束*/
+/*内容结束*/
+/*!*底部开始*!*/
+/*footer{*/
+    /*width: 100%;*/
+    /*background-color: #0a3665;*/
+    /*color: white;*/
+/*}*/
+/*footer footer-box{*/
+     /*padding-right: 0px;*/
+     /*padding-left: 0px;*/
+     /*margin-right: auto;*/
+     /*margin-left: auto;*/
+    /*width: 100%;*/
+/*}*/
+/*.footer-inner{*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*margin: 0;*/
+    /*padding: 0 5%;*/
+/*}*/
+/*.footer-top{*/
+    /*padding: 40px 0 20px 0;*/
+/*}*/
+/*.footer-logo{*/
+    /*padding-bottom: 30px;*/
+/*}*/
+/*.footer-logo a{*/
+    /*display: inline-block;*/
+/*}*/
+/*.footer-top>div{*/
+    /*font-size: 16px;*/
+/*}*/
+/*.footer-top .footer-user{*/
+    /*padding-bottom: 20px;*/
+/*}*/
+/*.footer-user a{*/
+    /*display: inline-block;*/
+    /*padding-bottom: 8px;*/
+    /*color: white;*/
+/*}*/
+/*.footer-qrCode {*/
+    /*position: relative;*/
+/*}*/
+ /*.footer-qrCode a {*/
+    /*display: block;*/
+    /*margin: 20px 0 20px 0;*/
+    /*width: 48px;*/
+    /*height: 48px;*/
+    /*border: 1px solid #b1b1b1;*/
+    /*cursor: pointer;*/
+     /*position: relative;*/
+/*}*/
+/*.footer-qrCode a div{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background-color: #fff;*/
+    /*position: absolute;*/
+    /*top: -50%;*/
+    /*right: -250% ;*/
+    /*padding: 5px;*/
+    /*display: none;*/
+/*}*/
+/*.footer-qrCode a:hover div{*/
+    /*display: block;*/
+/*}*/
+/*.footer-qrCode a div:after{*/
+    /*content:"";*/
+    /*display: block;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*background-color: #fff;*/
+    /*transform: rotate(45deg);*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*margin-top: -5px;*/
+    /*left: -5%;*/
+/*}*/
+ /*.footer-qrCode a img {*/
+    /*width: 100%;*/
+    /*height: auto;*/
+/*}*/
+ /*.footer-qrCode .footer-qrCode-img {*/
+    /*display: block;*/
+/*}*/
+/*.footer-help-title {*/
+    /*padding-bottom: 15px;*/
+/*}*/
+/*.footer-help {*/
+    /*padding-left: 26px;*/
+    /*padding-bottom: 15px;*/
+    /*position: relative;*/
+/*}*/
+/*.footer-help a{*/
+    /*color: #fff;*/
+    /*font-size: 16px;*/
+    /*text-decoration: none;*/
+/*}*/
+ /*.footer-help .icon {*/
+    /*position: absolute;*/
+     /*top: 6px;*/
+     /*left: 0;*/
+/*}*/
+/*.icon.icon-footer-mail {*/
+    /*display: block;*/
+    /*width: 16px;*/
+    /*height: 11px;*/
+    /*background: url(../img/icons.png) -60px -10px no-repeat;*/
+    /*position: absolute;*/
+/*}*/
+/*.footer-top .footer-help-mob .click_download{*/
+    /*display: none;*/
+    /*color: #fff;*/
+    /*font-size: 15px;*/
+    /*border-bottom: 1px solid #fff;*/
+    /*line-height: 1;*/
+    /*margin-bottom: 10px;*/
+    /*padding-top: 4px;*/
+/*}*/
+/*.icon.icon-footer-phone {*/
+    /*display: block;*/
+    /*width: 14px;*/
+    /*height: 14px;*/
+    /*background: url(../img/icons.png) -86px -10px no-repeat;*/
+    /*position: absolute;*/
+    /*top: 6px;*/
+    /*left: 0;*/
+/*}*/
+/*.icon.icon-footer-sevice {*/
+    /*display: block;*/
+    /*width: 16px;*/
+    /*height: 14px;*/
+    /*background: url(../img/icons.png) -35px -10px no-repeat;*/
+    /*position: absolute;*/
+/*}*/
+/*.icon.icon-footer-weibo {*/
+    /*display: block;*/
+    /*width: 17px;*/
+    /*height: 14px;*/
+    /*margin-left: -1px;*/
+    /*background: url(../img/icons.png) -280px -10px no-repeat;*/
+    /*position: absolute;*/
+
+/*}*/
+/*.footer-beian{*/
+    /*border-top: 1px solid #fff;*/
+/*}*/
+/*.footer-beian p {*/
+    /*color: #fff;*/
+    /*font-size: 12px;*/
+    /*line-height: 12px;*/
+    /*padding: 18px 0 0 0;*/
+    /*margin: 0;*/
+    /*display: inline-block;*/
+    /*margin-right: 20px;*/
+/*}*/
+/*.footer-beian a.footer-termsofuse {*/
+    /*display: inline-block;*/
+    /*color: #fff;*/
+    /*font-size: 14px;*/
+    /*line-height: 14px;*/
+    /*padding: 18px 0 10px 0;*/
+/*}*/
+/*.footer-beian a.footer-privacypolicy, .footer-beian a.footer-returnpolicy {*/
+    /*margin-left: 30px;*/
+    /*position: relative;*/
+/*}*/
+/*.footer-beian a.footer-privacypolicy {*/
+    /*display: inline-block;*/
+    /*text-decoration: none;*/
+    /*color: #fff;*/
+    /*font-size: 14px;*/
+    /*line-height: 14px;*/
+    /*margin-left: 10px;*/
+    /*padding: 18px 0 10px 0;*/
+/*}*/
+/*.footer-beian a.footer-returnpolicy {*/
+    /*display: inline-block;*/
+    /*text-decoration: none;*/
+    /*color: #fff;*/
+    /*font-size: 14px;*/
+    /*line-height: 14px;*/
+    /*margin-left: 10px;*/
+    /*padding: 18px 0 10px 0;*/
+/*}*/
+/*.footer-beian a.footer-privacypolicy, .footer-beian a.footer-returnpolicy {*/
+    /*margin-left: 30px;*/
+    /*position: relative;*/
+/*}*/
+/*.footer-beian a.footer-privacypolicy:before, .footer-beian a.footer-returnpolicy:before {*/
+    /*content: "";*/
+    /*display: block;*/
+    /*width: 1px;*/
+    /*height: 14px;*/
+    /*background-color: #fff;*/
+    /*position: absolute;*/
+    /*top: 18px;*/
+    /*left: -16px;*/
+/*}*/
+/*.footer-copyright {*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*padding: 5px 0;*/
+/*}*/
+/*.footer-copyright p {*/
+    /*color: #fff;*/
+    /*font-size: 12px;*/
+    /*margin: 0;*/
+    /*padding-bottom: 18px;*/
+/*}*/
+/*@media (max-width: 767px){*/
+    /*.footer-top{*/
+        /*text-align: center;*/
+        /*position: relative;*/
+        /*padding-bottom: 255px;*/
+
+    /*}*/
+    /*.footer-logo{*/
+        /*padding: 10px 0 18px 0;*/
+        /*margin: 0 auto;*/
+    /*}*/
+    /*.footer-logo.footer-logo-tw {*/
+        /*width: 42%;*/
+    /*}*/
+    /*.footer-logo img {*/
+        /*width: 100%;*/
+        /*height: auto;*/
+        /*transform: scale(0.8);*/
+    /*}*/
+   /*.footer-top .footer-user {*/
+        /*padding-bottom: 10px;*/
+    /*}*/
+    /*.footer-top .footer-help-title {*/
+        /*padding-bottom: 15px;*/
+    /*}*/
+    /*.footer-top p, .footer-top div {*/
+        /*font-size: 14px;*/
+    /*}*/
+    /*.footer-top .footer-help {*/
+        /*display:inline-block;*/
+        /*width: 225px;*/
+    /*}*/
+    /*.footer-top .footer-help-mob {*/
+        /*width: 196px;*/
+        /*text-align: left;*/
+        /*position: absolute;*/
+        /*top: 38%;*/
+        /*left: 50%;*/
+        /*margin-left: -98px;*/
+    /*}*/
+    /*.footer-top .footer-help-mob .click_download{*/
+        /*display: inline-block;*/
+    /*}*/
+    /*.footer-top .footer-help-title {*/
+        /*text-align: center;*/
+    /*}*/
+    /*.footer-top .footer-help .icon {*/
+        /*top: 4px;*/
+    /*}*/
+    /*.none-xs, .hidden-xs {*/
+        /*display: none!important;*/
+    /*}*/
+    /*.footer-top p a {*/
+        /*font-size: 14px;*/
+    /*}*/
+/*}*/
+/*!*底部结束*!*/

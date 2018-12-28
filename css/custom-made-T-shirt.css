@@ -1,0 +1,279 @@
+body{
+    overflow-x: hidden;
+}
+.content{
+    width: 100%;
+}
+.content-top{
+    width: 100%;
+
+}
+.content-top a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.content-top a img{
+    width: 100%;
+    height: auto;
+    margin-left: -100%;
+    margin-right: -100%;
+}
+.steps,.steps>div{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.step-title {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-top: 50px;
+    position: relative;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #000;
+    line-height: 1em;
+    padding-left: 4%;
+}
+.step-des{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #221815;
+    line-height: 1em;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding-left: 4%;
+}
+.select-favorite{
+    width: 100%;
+    margin: 0 auto;
+}
+.select-favorite .teamBox{
+    width: 100%;
+    background-color: #eee;
+    padding: 25px 0 25px 48px;
+    overflow: hidden;
+}
+.teamBox li {
+    width: 13.2857%;
+    height: auto;
+    position: relative;
+}
+.teamBox li a{
+    margin-right: 33.33%;
+    display: inline-block;
+    padding: 25px 0 25px 28px;
+}
+.teamBox li .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+}
+.icon.icon-common-choiceM {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/icons.png) -108px -1084px no-repeat;
+}
+.icon.icon-common-choiceM.on{
+    background-position: -10px -1084px;
+}
+.teamBox li img {
+    width: 100%;
+    height: auto;
+}
+.bannerBox{
+    width: 100%;
+    padding-top: 60px;
+}
+.bannerBox .bannerBox-inner{
+    width: 100%;
+}
+.banner-left{
+    width: 55.5%;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+}
+.banner-scroll{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 22%;
+}
+.bannerul{
+    width: 600%;
+}
+.bannerul li{
+    width: 16.66666%;
+    text-align: center;
+}
+.bannerul li a{
+    margin: 0 auto;
+    display: inline-block;
+    transform-origin: 50% 0;
+    text-align: center ;
+}
+.bannerul li a img{
+    width: 100%;
+    height: 100%;
+}
+.banner-right{
+    width: 44.5%;
+    background-color: skyblue;
+    height: auto;
+    float: left;
+}
+.btn-prev,.btn-next{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.btn-prev{
+    left: 0;
+}
+ .btn-next{
+    right: 0;
+}
+.btn-prev span,.btn-next span{
+    display: inline-block;
+    width: 40px;
+    height: 91px;
+    background: url(../img/icons.png) -10px -2489px no-repeat;
+    position: absolute;
+    top: 50%;
+    margin: -45.5px 0 0 0px;
+}
+.btn-prev span{
+    left: 50%;
+}
+.btn-next span{
+    background-position: -133px -2489px;
+    right: 50%;
+}
+.banner-scroll .circle{
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 10%;
+}
+.banner-scroll .circle li{
+    float: left;
+    margin: 0 5px 2px 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+    background: url(../img/icons.png) -344px -2489px no-repeat;
+    cursor: pointer;
+}
+
+.banner-scroll .circle li.active{
+    background-position:-254px -2489px ;
+}
+.banner-right{
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+
+.right-add{
+    height: 488px;
+    display: inline-block;
+    width: 44.5%;
+    background-color: #efefef;
+    padding: 15px;
+    position: relative;
+    float: left;
+}
+.right-add .first{
+    display: none;
+}
+.right-add p.sizetlt,.right-add p.colortlt,.right-add p.cloth-face{
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 0 0 15px;
+}
+.right-add p.sizetlt .sizeval,.right-add p.colortlt .colorval{
+    font-weight: normal;
+}
+.size-list{
+    margin-bottom: 20px;
+}
+.size-list ul li{
+    float: left;
+    width: 33.33%;
+    padding: 4px;
+}
+.size-list ul li p{
+    border: 1px solid #2e2e2e;
+    height: 36px;
+    line-height: 34px;
+    font-weight: bolder;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+.color-circle{
+    width: 100%;
+}
+.color-circle ul{
+    display: flex;
+    justify-content: space-around;
+}
+.color-circle ul li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.color-circle ul li.warrior-blue{
+    background-color: rgb(0,93,173);
+}
+.color-circle ul li.black{
+    background-color: #000;
+}
+.color-circle ul li.white{
+    background-color: #fff;
+}
+.color-circle ul li.current{
+    width: 56px;
+    height: 56px;
+    border: 1px solid #1c1c1c;
+}
+.right-add .second .example-img{
+    width: 60%;
+    margin: 0 auto;
+    background-color: tomato;
+    height: auto;
+}
+.right-add .second .example-img img{
+    width: 100%;
+    height: auto;
+}
+.right-add .second .money-hk{
+    width: 100%;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+/*价格*/
+.right-price{
+    height: 488px;
+    display: inline-block;
+    width: 52.5%;
+    padding-left: 20px;
+    background-color: tomato;
+    float: left;
+}

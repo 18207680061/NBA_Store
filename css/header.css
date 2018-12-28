@@ -1,0 +1,556 @@
+/*头部开始*/
+body{
+    min-width: 320px;
+}
+header{
+    width: 100%;
+    background-color: rgb(10,54,101);
+    position: relative;
+}
+.header-list{
+    float: right;
+    margin-right: -2%;
+}
+.header-list ul li{
+    float: left;
+    padding: 9px 0px;
+}
+
+.header-list ul li a{
+    padding: 0 12px;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 16px;
+    border-right: 2px solid white;
+}
+.header-list ul li a:hover{
+    text-decoration: none;
+}
+.been-fixed{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 14;
+}
+.header-list ul li:nth-last-of-type(1) a{
+    border: none;
+}
+.header-list ul li:nth-child(3) a span{
+    color: #ec003d;
+    margin-left: 5px;
+}
+.header-list ul li:nth-child(3) a:before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url("../img/cart-icons.png")no-repeat -150px 0px;
+    position: relative;
+    top: 3px;
+}
+.header-list ul li:nth-child(4) a:before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    background: url("../img/icons.png")no-repeat -35px -7px;
+    position: relative;
+    top: 3px;
+}
+.header-list ul li:nth-child(4) a span{
+    margin-left: 5px;
+}
+.fontbold{
+    font-weight: bold;
+}
+.logo-list{
+    margin-top: 28px;
+    position: relative;
+    width: 100%;
+    padding: 0px 0 7px 3%;
+}
+.logo-list h1{
+    display: inline-block;
+    height: 58px;
+    margin-left:-9%;
+    width: 218px;
+}
+.logo-list .search-out{
+    width: 50%;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 33px;
+    left:20%;
+    z-index: 6;
+}
+.logo-list .search-out a{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    background-color: blue;
+    width: 25px;
+    height: 24px;
+    background: url("../img/search-icon.png");
+}
+.logo-list .search-out .search{
+    border-radius: 3px;
+    height: 40px;
+    line-height: 14px;
+    padding: 0 50px 0 13px;
+    font-size: 14px;
+    box-shadow: none;
+    margin: 0 auto;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+/*.logo-list .scroll-style{*/
+    /*position: fixed;*/
+    /*width: 16%;*/
+    /*line-height: 34px;*/
+    /*left: 83%;*/
+    /*top: 5px;*/
+    /*z-index: 16;*/
+    /*padding: 0 40px 0 10px;*/
+/*}*/
+/*.logo-list .scroll-style a{*/
+    /*width: 21px;*/
+    /*height: 20px;*/
+    /*top: 10px;*/
+    /*right: 56px;*/
+    /*background-size: 100% auto;*/
+/*}*/
+.logo-list .custom-made{
+    display: inline-block;
+    position: absolute;
+    top: 41px;
+    right: 53px;
+}
+.logo-list .custom-made a{
+    color: #FFFFFF;
+    text-decoration: underline;
+    padding-right: 15px;
+    font-size: 18px;
+}
+.logo-list .menu{
+    display: none;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.logo-list .shoppingcart{
+    display: none;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+}
+.brand-list-out{
+    width: 100%;
+    height: 35px;
+}
+.brand-list{
+    width: 100%;
+    height: 35px;
+    padding: 0 5%;
+    background-color: #0669b2;
+    position: relative;
+}
+.brand-list .brand-cover{
+    margin-left: -5%;
+    line-height: 100%;
+}
+.brand-list .brand-cover>li{
+    float: left;
+    line-height: 100%;
+    margin-right: 2%;
+    text-align: center;
+    padding: 0;
+    position: relative;
+}
+.brand-list .brand-cover>li>a{
+    padding: 0 6px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
+.brand-list .brand-cover>li>a:hover{
+    background-color: #06558e;
+    color: #ec003d;
+    text-decoration: none;
+}
+.brand-list .brand-cover>li:nth-child(2)>a{
+    padding: 0 18px;
+}
+.brand-list .brand-cover>li>a>img{
+    width: 60px;
+    padding-bottom: 3px;
+}
+header .brand-list-fixed{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    line-height: 50px;
+}
+
+header .brand-list-fixed .brand-cover>li>a{
+    font-size: 14px;
+    line-height: 50px;
+
+}
+.select-team-out,.brand-out,.all-commodity-out,.upper-wear-out,.lower-wear-out,.girl-out,.shoes-out,.basketball-out,.equipment-out,.kids-and-young-out{
+    position: absolute;
+    left: -21px;
+    top: 32px;
+    padding-top: 18px;
+    background-color: transparent;
+    display: none;
+    z-index: 10;
+}
+.brand-out,.upper-wear-out,.lower-wear-out,.girl-out,.shoes-out,.basketball-out,.equipment-out{
+    left: -91px;
+}
+.all-commodity-out{
+    left: -88px;
+}
+.kids-and-young-out{
+    left: -68px;
+}
+.select-team,.brand,.all-commodity,.upper-wear,.lower-wear,.girl,.shoes,.basketball,.equipment,.kids-and-young{
+    width: 470px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 1px 1px 0 rgba(0,0,0,.175);
+    position: relative;
+}
+.select-team i,.brand-out i,.all-commodity i,.upper-wear i,.lower-wear i,.girl i,.shoes i,.basketball i,.equipment i,.kids-and-young i{
+    position: absolute;
+    display: block;
+    width: 21px;
+    height: 10px;
+    background: url(../img/icons.png) -10px -170px no-repeat;
+    top: -10px;
+    left: 13%;
+    margin-left: -10.5px;
+}
+.brand-out i,.all-commodity i,.upper-wear i,.lower-wear i,.girl i,.shoes i,.basketball i,.equipment i,.kids-and-young i{
+    left: 50%;
+}
+.select-team ul li{
+    float: none;
+    width: 100%;
+}
+.select-team ul li h4{
+    padding: 0 10px 0 40px;
+    font-size: 18px;
+    color: #00559a;
+}
+.select-team .west-team li h4{
+    color: #ec003d;
+}
+.select-team ul li a{
+    font-size: 14px;
+    color: #808285;
+    padding: 0 6px;
+    display: inline-block;
+    line-height: 35px;
+    width: 100%;
+}
+.select-team ul li a:hover,.brand ul li a:hover,.all-commodity ul li a:hover,.upper-wear ul li a:hover,.lower-wear ul li a:hover,.girl ul li a:hover,.shoes ul li a:hover,.basketball ul li a:hover,.equipment ul li a:hover,.kids-and-young ul li a:hover{
+    text-decoration: none;
+    background-color: #f6f6f6;
+    color: #00559a;
+    font-weight: bold;
+}
+.select-team .east-team{
+    width: 50%;
+    float: left;
+}
+.select-team .west-team{
+    width: 50%;
+    float: right;
+}
+.brand,.all-commodity,.upper-wear,.lower-wear,.girl,.shoes,.basketball,.equipment,.kids-and-young{
+    width: 220px;
+}
+.brand ul,.all-commodity ul,.upper-wear ul,.lower-wear ul,.girl ul,.shoes ul,.basketball ul,.equipment ul,.kids-and-young ul{
+    padding: 5px 0 14px 0;
+}
+.brand ul li,.all-commodity ul li,.upper-wear ul li,.lower-wear ul li,.girl ul li,.shoes ul li,.basketball ul li,.equipment ul li,.kids-and-young ul li{
+    width: 100%;
+    height: auto;
+}
+.brand ul li a,.all-commodity ul li a,.upper-wear ul li a,.lower-wear ul li a,.girl ul li a,.shoes ul li a,
+.basketball ul li a,.equipment ul li a,.kids-and-young ul li a{
+    height: auto;
+    padding: 0 20px 0 20px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #808285;
+    word-break: normal;
+    line-height: 35px;
+    display: inline-block;
+    width: 100%;
+}
+.plank{
+    width: 100%;
+}
+.plank .smallimg{
+    display: none;
+}
+.menuclick{
+    display: none;
+}
+/*头部结束*/
+/*媒体查询开始*/
+@media (min-width: 1301px){
+    .brand-list .brand-cover>li>a{
+        font-size: 16px;
+        padding:0px 6px;
+    }
+}
+@media (max-width: 1300px){
+    .brand-list ul li a{
+        font-size: 14px;
+        padding: 0px 6px 0px 6px;
+    }
+}
+@media (max-width: 1024px){
+    .brand-list ul li a{
+        font-size: 14px;
+        padding:0px 6px;
+    }
+    .header-list{
+        position: absolute;
+        left: 12px;
+        top: 88px;
+    }
+    .logo-list h1{
+        position: absolute;
+        top: -24px;
+        left: 40px;
+    }
+    .pb{
+        padding-bottom: 95px;
+    }
+    .logo-list .search-out {
+        top: 50px;
+        width: 26%;
+        left: 75%;
+    }
+    .logo-list .custom-made{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
+
+}
+@media (max-width: 990px){
+    .brand-list ul li a{
+        font-size: 12px;
+        padding: 0 4px;
+        z-index: 3;
+    }
+    .brand-list .brand-cover>li>a>img{
+        width: 46.5px;
+        padding-bottom: 3px;
+    }
+}
+@media (max-width: 767px){
+    .plank .bigimg{
+        display: none;
+    }
+    .plank .smallimg{
+        display: block;
+    }
+    .header-list,.custom-made a,.brand-list{
+        display: none;
+    }
+    .logo-list{
+        margin: 0 auto;
+    }
+    .logo-list h1{
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        width: 100%;
+    }
+    .logo-list h1 img{
+        width: 30%;
+        height: auto;
+        position: absolute;
+        left: 15%;
+        margin-left: -20%;
+    }
+    .logo-list{
+        margin-top: 3%;
+    }
+    .logo-list .search-out{
+        width: 100%;
+        left: 0%;
+        top: 1300%;
+    }
+    .logo-list .search-out .search{
+        border: 2px solid #cfcfcf;
+        outline: none;
+
+    }
+    .logo-list .menu{
+        display: block;
+        top: 0;
+        right: auto;
+        left: 0;
+        width: 14%;
+        height: auto;
+        padding: 4% 4% 2% 4%;
+    }
+    .logo-list .menu a,.logo-list .shoppingcart a{
+        width: 100%;
+        height: auto;
+    }
+    .logo-list .menu a img,.logo-list .shoppingcart a img{
+        width: 100%;
+        height: auto;
+    }
+    .logo-list .shoppingcart{
+        display: block;
+        top: 0;
+        right: 0;
+        width: 14%;
+        height: auto;
+        padding: 4% 4% 2% 4%;
+    }
+    .logo-list .shoppingcart a:after{
+        content: '0';
+        display: inline-block;
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        line-height: 20px;
+        font-size: 12px;
+        background: url("../img/cart-icons.png")no-repeat -150px -300px;
+        z-index: 6;
+        left: 57%;
+        top: 26%;
+        color: white;
+        text-align: center;
+    }
+    .menuclick{
+        display: none;
+        width: 68%;
+        height: 100%;
+        background-color: #434a54;
+        position: fixed;
+        z-index: 7;
+        left: 0;
+        top: 0;
+    }
+    .menuclick .ulmenuclick-out{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .ulmenuclick{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+    .ulmenuclick li{
+        width: 100%;
+    }
+    .ulmenuclick li.bordertop{
+        border-top: 2px solid #393f48;
+    }
+    .ulmenuclick li a{
+        color: #fff;
+        font-size: 14px;
+        line-height: 14px;
+        border: 0;
+        padding: 15px 20px;
+        display: inline-block;
+        position: relative;
+        font-weight: normal;
+    }
+    .ulmenuclick li a i{
+        width: 8px;
+        height: 11px;
+        background: url(../img/icons.png) -10px -139px no-repeat;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        margin-top: -6px;
+        display: none;
+    }
+    .positionrelative{
+        position: relative;
+    }
+    .positionrelative a{
+        width: 100%;
+    }
+    .ulmenuclick li:nth-last-of-type(2):after{
+        content: '';
+        display: inline-block;
+        background: url("../img/icons.png") no-repeat -90px -319px;
+        width: 15px;
+        height: 13px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        margin-top: -6.5px;
+        z-index: 8;
+    }
+    .ulmenuclick li:nth-last-of-type(1):after{
+        content: '';
+        display: inline-block;
+        background: url("../img/icons.png") no-repeat -10px -319px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        margin-top: -6.5px;
+        z-index: 8;
+    }
+    .ulmenuclick li a:hover{
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #393f48;
+    }
+    .ulmenuclick li a:hover i{
+        display: block;
+    }
+    .pb{
+        padding-bottom: 15%;
+    }
+    .content{
+        padding-top: 50px;
+    }
+}
+.logo-list .scroll-style{
+    position: fixed;
+    width: 16%;
+    line-height: 34px;
+    left: 83%;
+    top: 5px;
+    z-index: 16;
+    padding: 0 40px 0 10px;
+}
+.logo-list .scroll-style a{
+    width: 21px;
+    height: 20px;
+    top: 10px;
+    right: 56px;
+    background-size: 100% auto;
+}
+/*媒体查询结束*/
